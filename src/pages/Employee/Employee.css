@@ -1,0 +1,15 @@
+.employee {
+  width: 100%;
+}
+
+.employee .employeeTable {
+  margin: 0 20px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: auto;
+}
+
+.employee .employeeTable span {
+  font-size: 16px !important;
+  padding: 0 10px;
+}

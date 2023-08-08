@@ -1,0 +1,37 @@
+.department {
+  width: 100%;
+}
+
+.department .actionArea {
+  width: calc(100% - 40px);
+  height: 50px;
+  margin: 20px;
+  margin-top: 40px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.department .actionArea .addBtn {
+  width: max-content;
+  min-width: max-content;
+  background-color: #0080ff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  float: right;
+  float: inline-end;
+  cursor: pointer;
+}
+
+.department .departmentTable {
+  margin: 0 20px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: auto;
+}
+
+.department .departmentTable span {
+  font-size: 16px !important;
+}

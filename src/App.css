@@ -41,11 +41,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .appWrapper {
   width: 100%;
   display: flex;
+  color: #797979;
 }
 
 .appWrapper .contentWrapper {

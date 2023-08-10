@@ -6,6 +6,11 @@ import {
   UserAddOutlined,
   UserOutlined,
   TeamOutlined,
+  FileDoneOutlined,
+  FileSyncOutlined,
+  FileAddOutlined,
+  DollarOutlined,
+  AuditOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
 import { useNavigate } from "react-router-dom";
@@ -52,52 +57,93 @@ const items = [
   ),
   getItem(
     <p>
-      <HomeOutlined />
+      <HomeOutlined style={{ fontSize: "16px" }} />
       &emsp; Dashboard
     </p>,
-    "/dashboard"
+    "/"
   ),
-  getItem("Nhân viên", "sub1", "", [
-    getItem("Phòng ban", "/department", <TeamOutlined />),
-    getItem("Phòng ban của tôi", "/my_department", <TeamOutlined />),
-    getItem("Toàn bộ nhân viên", "/employee", <TeamOutlined />),
-    getItem("Tạo nhân viên mới", "/new_employee", <UserAddOutlined />),
-  ]),
-  getItem("Tăng ca", "sub2", <></>, [
-    getItem(
-      "Đơn tăng ca nhân viên",
-      "/ot_applications",
-      <ClockCircleOutlined />
-    ),
-    getItem(
-      "Đơn tăng ca của tôi",
-      "/my_ot_applications",
-      <ClockCircleOutlined />
-    ),
-  ]),
-  getItem("Nghỉ phép", "sub3", <></>, [
-    getItem("Đơn nghỉ phép nhân viên", "/leave_applications", <MailOutlined />),
-    getItem(
-      "Đơn nghỉ phép của tôi",
-      "/my_leave_applications",
-      <MailOutlined />
-    ),
-  ]),
-  getItem("Đơn khác", "sub4", <></>, [
-    getItem("Danh sách đơn khác", "/other_applications", <MailOutlined />),
-    getItem("Đơn khác của tôi", "/my_other_applications", <MailOutlined />),
-  ]),
-  getItem("Quản lí lương", "sub5", <></>, [
-    getItem("Lương nhân viên", "/salary", <TeamOutlined />),
-    getItem("Lương của tôi", "/my_salary", <UserOutlined />),
-  ]),
-  getItem("Hợp đồng", "sub6", <></>, [
-    getItem("Hợp đồng nhân viên", "/contracts", <TeamOutlined />),
-    getItem("Hợp đồng của tôi", "/my_contract", <UserOutlined />),
-  ]),
-  getItem("Tuyển dụng", "sub7", <></>, [
-    getItem("Danh sách ứng viên", "/candidates", <TeamOutlined />),
-  ]),
+  getItem(
+    <span style={{ fontWeight: "700" }}>
+      {" "}
+      <TeamOutlined style={{ fontSize: "16px" }} />
+      &emsp; Nhân viên
+    </span>,
+    "sub1",
+    "",
+    [
+      getItem("Phòng ban", "/department", ""),
+      getItem("Phòng ban của tôi", "/my_department", ""),
+      getItem("Toàn bộ nhân viên", "/employee", ""),
+      getItem("Tạo nhân viên mới", "/new_employee", ""),
+    ]
+  ),
+  getItem(
+    <span style={{ fontWeight: "700" }}>
+      <FileDoneOutlined style={{ fontSize: "16px" }} />
+      &emsp;Tăng ca
+    </span>,
+    "sub2",
+    <></>,
+    [
+      getItem("Đơn tăng ca nhân viên", "/ot_applications", ""),
+      getItem("Đơn tăng ca của tôi", "/my_ot_applications", ""),
+    ]
+  ),
+  getItem(
+    <span style={{ fontWeight: "700" }}>
+      <FileSyncOutlined style={{ fontSize: "16px" }} />
+      &emsp;Nghỉ phép
+    </span>,
+    "sub3",
+    <></>,
+    [
+      getItem("Đơn nghỉ phép nhân viên", "/leave_applications", ""),
+      getItem("Đơn nghỉ phép của tôi", "/my_leave_applications", ""),
+    ]
+  ),
+  getItem(
+    <span style={{ fontWeight: "700" }}>
+      <FileAddOutlined style={{ fontSize: "16px" }} /> &emsp;Đơn khác
+    </span>,
+    "sub4",
+    <></>,
+    [
+      getItem("Danh sách đơn khác", "/other_applications", ""),
+      getItem("Đơn khác của tôi", "/my_other_applications", ""),
+    ]
+  ),
+  getItem(
+    <span style={{ fontWeight: "700" }}>
+      <DollarOutlined style={{ fontSize: "16px" }} /> &emsp;Quản lí lương
+    </span>,
+    "sub5",
+    <></>,
+    [
+      getItem("Lương nhân viên", "/salary", ""),
+      getItem("Lương của tôi", "/my_salary", ""),
+    ]
+  ),
+  getItem(
+    <span style={{ fontWeight: "700" }}>
+      <AuditOutlined style={{ fontSize: "16px" }} />
+      &emsp;Hợp đồng
+    </span>,
+    "sub6",
+    <></>,
+    [
+      getItem("Hợp đồng nhân viên", "/contracts", ""),
+      getItem("Hợp đồng của tôi", "/my_contract", ""),
+    ]
+  ),
+  getItem(
+    <span style={{ fontWeight: "700" }}>
+      <MailOutlined style={{ fontSize: "16px" }} />
+      &emsp;Tuyển dụng
+    </span>,
+    "sub7",
+    <></>,
+    [getItem("Danh sách ứng viên", "/candidates", "")]
+  ),
 ];
 export const MenuBar = () => {
   const navigate = useNavigate();
@@ -122,11 +168,14 @@ export const MenuBar = () => {
         height: "100vh",
         overflow: "auto",
         textAlign: "left",
+        fontWeight: "500",
+        fontSize: "16px",
         minWidth: 256,
+        color: "#797979",
       }}
       selectedKeys={[selectMenu]}
       // defaultSelectedKeys={[defaultSelectMenu]}
-      defaultOpenKeys={["sub1"]}
+      defaultOpenKeys={["sub1", "sub2", "sub3", "sub4", "sub5", "sub6", "sub7"]}
       mode="inline"
       items={items}
     />

@@ -16,7 +16,11 @@ const columns = [
     key: "moreOptions",
     render: (text) => (
       <div
-        style={{ textAlign: "center", fontSize: "16px", fontWeight: "bold" }}
+        style={{
+          textAlign: "center",
+          fontSize: "16px",
+          fontWeight: "bold",
+        }}
       >
         <EllipsisOutlined />
       </div>
@@ -36,7 +40,7 @@ const columns = [
           backgroundColor: status === "working" ? "#0080ff" : "gray",
           borderRadius: "50%",
           padding: "5px 0",
-          color: "white",
+          color: "#ffffff",
         }}
       >
         <UserOutlined />
@@ -45,10 +49,15 @@ const columns = [
     width: 40,
   },
   {
-    title: "ID",
+    title: (
+      <span style={{ color: "#9f9f9f", minWidth: "max-content" }}>ID</span>
+    ),
+    // style: { color: "#eaeaea" },
     dataIndex: "id",
     key: "id",
-    render: (text) => <p>{text}</p>,
+    render: (text) => (
+      <p style={{ minWidth: "max-content", color: "#797979" }}>{text}</p>
+    ),
     width: 40,
     sorter: (a, b) => a.id - b.id,
     defaultSortOrder: "ascend",
@@ -56,10 +65,10 @@ const columns = [
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         {" "}
         <AlignLeftOutlined />
-        <span>Tên nhân viên</span>
+        <span style={{ minWidth: "max-content" }}>Tên nhân viên</span>
       </div>
     ),
     dataIndex: "employeeName",
@@ -81,19 +90,28 @@ const columns = [
           />
         )}
 
-        <span style={{ minWidth: "max-content" }}>{text}</span>
+        <span
+          style={{
+            minWidth: "max-content",
+            fontWeight: "bold",
+            color: "#797979",
+          }}
+        >
+          {text}
+        </span>
       </div>
     ),
     width: 200,
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         {" "}
         <BarsOutlined />{" "}
         <span
           style={{
             minWidth: "max-content",
+            color: "#9f9f9f",
           }}
         >
           Phòng ban
@@ -115,7 +133,13 @@ const columns = [
           }}
         ></div>
 
-        <span style={{ textDecoration: "underline", minWidth: "max-content" }}>
+        <span
+          style={{
+            textDecoration: "underline",
+            minWidth: "max-content",
+            color: "#797979",
+          }}
+        >
           {text}
         </span>
       </div>
@@ -124,8 +148,15 @@ const columns = [
   },
   {
     title: (
-      <div>
-        <PhoneOutlined /> <span>Số điện thoại</span>
+      <div style={{ color: "#9f9f9f" }}>
+        <PhoneOutlined />{" "}
+        <span
+          style={{
+            minWidth: "max-content",
+          }}
+        >
+          Số điện thoại
+        </span>
       </div>
     ),
     dataIndex: "phone",
@@ -135,17 +166,23 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ color: "#797979" }}>{address}</span>
       </Tooltip>
     ),
     width: 200,
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         {" "}
         <BarsOutlined />
-        <span>Giới tính</span>
+        <span
+          style={{
+            minWidth: "max-content",
+          }}
+        >
+          Giới tính
+        </span>
       </div>
     ),
     dataIndex: "gender",
@@ -169,7 +206,7 @@ const columns = [
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         {" "}
         <AlignLeftOutlined />
         <span style={{ minWidth: "max-content" }}>Email</span>
@@ -182,13 +219,13 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ color: "#797979" }}>{address}</span>
       </Tooltip>
     ),
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         {" "}
         <AlignLeftOutlined />
         <span style={{ minWidth: "max-content" }}>Ngân hàng</span>
@@ -201,13 +238,13 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ color: "#797979" }}>{address}</span>
       </Tooltip>
     ),
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         <CalendarOutlined />
         <span style={{ minWidth: "max-content" }}>Ngày sinh</span>
       </div>
@@ -219,15 +256,17 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ color: "#797979" }}>{address}</span>
       </Tooltip>
     ),
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         <AlignLeftOutlined />
-        <span style={{ minWidth: "max-content" }}>Địa chỉ</span>
+        <span style={{ minWidth: "max-content", color: "#9f9f9f" }}>
+          Địa chỉ
+        </span>
       </div>
     ),
     dataIndex: "address",
@@ -237,13 +276,15 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ minWidth: "max-content", color: "#797979" }}>
+          {address}
+        </span>
       </Tooltip>
     ),
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         <AlignLeftOutlined />
         <span style={{ minWidth: "max-content" }}>Quốc gia</span>
       </div>
@@ -255,13 +296,13 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ color: "#797979" }}>{address}</span>
       </Tooltip>
     ),
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         <CalendarOutlined />
         <span style={{ minWidth: "max-content" }}>Tài khoản ngân hàng</span>
       </div>
@@ -273,7 +314,7 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ color: "#797979" }}>{address}</span>
       </Tooltip>
     ),
   },
@@ -283,7 +324,7 @@ const data = employeeData;
 export const EmployeeTable = () => {
   return (
     <Table
-      style={{ minWidth: "100%" }}
+      style={{ minWidth: "100%", color: "#797979" }}
       scroll={{ x: "max-content" }}
       columns={columns}
       dataSource={data}

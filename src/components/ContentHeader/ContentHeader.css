@@ -1,10 +1,11 @@
 .contentHeader {
   width: 100%;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #eaeaea;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .contentHeader .title {
@@ -17,10 +18,11 @@
   border-radius: 12px;
   border: 1px solid #eaeaea;
   color: #909ba6;
-  font-size: 18px;
+  font-size: 24px;
   cursor: pointer;
 }
 
 .contentHeader .logoutBtn:hover {
-  color: blue;
+  color: #0080ff;
+  border-color: #0080ff;
 }

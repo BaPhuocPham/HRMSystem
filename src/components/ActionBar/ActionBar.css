@@ -27,9 +27,13 @@
   border: 2px solid #79e38c;
   font-weight: bold;
   color: #79e38c;
-  padding: 10px 15px;
+  padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.actionBar .dropdownArea .resetBtn:hover {
+  box-shadow: rgba(121, 227, 140, 0.4) 0px 5px 15px;
 }
 
 .actionBar .addBtnArea .addBtn {
@@ -43,4 +47,10 @@
   border-radius: 5px;
   float: right;
   cursor: pointer;
+}
+
+.actionBar .addBtnArea .addBtn:hover {
+  background-color: white;
+  color: #0080ff;
+  border: solid 1px #0080ff;
 }

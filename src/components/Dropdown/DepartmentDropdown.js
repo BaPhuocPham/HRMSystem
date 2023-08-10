@@ -55,7 +55,7 @@ export const DepartmentDropdown = () => {
       }}
     >
       <p
-        style={{ color: "#797979", fontWeight: "bold" }}
+        style={{ color: "#797979", fontWeight: "500" }}
         onClick={(e) => e.preventDefault()}
       >
         <Space>

@@ -25,6 +25,12 @@
   cursor: pointer;
 }
 
+.department .actionArea .addBtn:hover {
+  background-color: white;
+  color: #0080ff;
+  border: solid 1px #0080ff;
+}
+
 .department .departmentTable {
   margin: 0 20px;
   margin-top: 20px;
@@ -34,4 +40,5 @@
 
 .department .departmentTable span {
   font-size: 16px !important;
+  min-width: "max-content" !important;
 }

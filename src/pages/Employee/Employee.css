@@ -11,5 +11,6 @@
 
 .employee .employeeTable span {
   font-size: 16px !important;
+  min-width: "max-content" !important;
   padding: 0 10px;
 }

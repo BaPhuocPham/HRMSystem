@@ -23,15 +23,17 @@ const columns = [
     width: 20,
   },
   {
-    title: "ID",
+    title: <span style={{ color: "#9f9f9f" }}>ID</span>,
     dataIndex: "id",
     key: "id",
-    render: (text) => <span>{text}</span>,
+    render: (text) => (
+      <span style={{ minWidth: "max-content", color: "#797979" }}>{text}</span>
+    ),
     width: 80,
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         {" "}
         <UserOutlined />
         &emsp; <span>Tên phòng ban</span>
@@ -51,7 +53,13 @@ const columns = [
           }}
         ></div>
         &emsp;
-        <span style={{ textDecoration: "underline", minWidth: "max-content" }}>
+        <span
+          style={{
+            color: "#797979",
+            textDecoration: "underline",
+            minWidth: "max-content",
+          }}
+        >
           {text}
         </span>
       </div>
@@ -60,7 +68,7 @@ const columns = [
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         {" "}
         <UserOutlined />
         &emsp;<span>Quản lý</span>
@@ -76,7 +84,6 @@ const columns = [
           <img
             style={{
               display: "inline-block",
-
               width: "40px",
               height: "40px",
               borderRadius: "50%",
@@ -86,14 +93,22 @@ const columns = [
           />
         )}
         &emsp;
-        <span style={{ minWidth: "max-content" }}>{text}</span>
+        <span
+          style={{
+            minWidth: "max-content",
+            color: "#797979",
+            fontWeight: "bold",
+          }}
+        >
+          {text}
+        </span>
       </div>
     ),
     width: 200,
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         <NumberOutlined />
         &emsp; <span>Số nhân viên</span>
       </div>
@@ -105,16 +120,21 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ minWidth: "max-content", color: "#797979" }}>
+          {address}
+        </span>
       </Tooltip>
     ),
     width: 100,
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         <AlignLeftOutlined />
-        &emsp; <span style={{ minWidth: "max-content" }}>Email quản lý</span>
+        &emsp;{" "}
+        <span style={{ minWidth: "max-content", fontWeight: 500 }}>
+          Email quản lý
+        </span>
       </div>
     ),
     dataIndex: "email",
@@ -124,14 +144,16 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ minWidth: "max-content", color: "#797979" }}>
+          {address}
+        </span>
       </Tooltip>
     ),
     width: 200,
   },
   {
     title: (
-      <div>
+      <div style={{ color: "#9f9f9f" }}>
         <PhoneOutlined /> &emsp;{" "}
         <span style={{ minWidth: "max-content" }}>Số điện thoại</span>
       </div>
@@ -143,7 +165,9 @@ const columns = [
     },
     render: (address) => (
       <Tooltip placement="topLeft" title={address}>
-        {address}
+        <span style={{ minWidth: "max-content", color: "#797979" }}>
+          {address}
+        </span>
       </Tooltip>
     ),
     width: 200,
@@ -158,6 +182,7 @@ export const DepartmentTable = () => {
       scroll={{ x: "max-content" }}
       columns={columns}
       dataSource={data}
+      pagination={{ defaultPageSize: 8 }}
     />
   );
 };

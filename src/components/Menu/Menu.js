@@ -13,7 +13,7 @@ import {
   AuditOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -47,7 +47,7 @@ const items = [
         style={{
           minWidth: "max-content",
           fontWeight: "bold",
-          color: "#797979",
+          // color: "#797979",
         }}
       >
         Nguyen Van Quan Ly
@@ -147,13 +147,16 @@ const items = [
 ];
 export const MenuBar = () => {
   const navigate = useNavigate();
-  const [selectMenu, setSelectMenu] = useState("/employee");
-  useEffect(() => {
-    if (localStorage.getItem("locationMenu")) {
-      setSelectMenu(localStorage.getItem("locationMenu"));
-      navigate(localStorage.getItem("locationMenu"));
-    }
-  }, []);
+  const location = useLocation();
+  const [selectMenu, setSelectMenu] = useState(location.pathname);
+  // useEffect(() => {
+  //   console.log(location.pathname);
+  //   setSelectMenu(location.pathname);
+  //   // if (localStorage.getItem("locationMenu")) {
+  //   //   setSelectMenu(localStorage.getItem("locationMenu"));
+  //   //   navigate(localStorage.getItem("locationMenu"));
+  //   // }
+  // }, []);
   const onClick = (e) => {
     console.log("click ", e.key);
     localStorage.setItem("locationMenu", e.key);
@@ -171,7 +174,7 @@ export const MenuBar = () => {
         fontWeight: "500",
         fontSize: "16px",
         minWidth: 256,
-        color: "#797979",
+        // color: "#797979",
       }}
       selectedKeys={[selectMenu]}
       // defaultSelectedKeys={[defaultSelectMenu]}

@@ -49,9 +49,7 @@ const columns = [
     width: 40,
   },
   {
-    title: (
-      <span style={{ color: "#9f9f9f", minWidth: "max-content" }}>ID</span>
-    ),
+    title: <span style={{ minWidth: "max-content" }}>ID</span>,
     // style: { color: "#eaeaea" },
     dataIndex: "id",
     key: "id",
@@ -65,7 +63,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         {" "}
         <AlignLeftOutlined />
         <span style={{ minWidth: "max-content" }}>Tên nhân viên</span>
@@ -105,13 +103,12 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         {" "}
         <BarsOutlined />{" "}
         <span
           style={{
             minWidth: "max-content",
-            color: "#9f9f9f",
           }}
         >
           Phòng ban
@@ -148,7 +145,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <PhoneOutlined />{" "}
         <span
           style={{
@@ -173,7 +170,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         {" "}
         <BarsOutlined />
         <span
@@ -206,7 +203,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         {" "}
         <AlignLeftOutlined />
         <span style={{ minWidth: "max-content" }}>Email</span>
@@ -225,7 +222,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         {" "}
         <AlignLeftOutlined />
         <span style={{ minWidth: "max-content" }}>Ngân hàng</span>
@@ -244,7 +241,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <CalendarOutlined />
         <span style={{ minWidth: "max-content" }}>Ngày sinh</span>
       </div>
@@ -262,11 +259,9 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <AlignLeftOutlined />
-        <span style={{ minWidth: "max-content", color: "#9f9f9f" }}>
-          Địa chỉ
-        </span>
+        <span style={{ minWidth: "max-content" }}>Địa chỉ</span>
       </div>
     ),
     dataIndex: "address",
@@ -284,7 +279,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <AlignLeftOutlined />
         <span style={{ minWidth: "max-content" }}>Quốc gia</span>
       </div>
@@ -302,7 +297,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <CalendarOutlined />
         <span style={{ minWidth: "max-content" }}>Tài khoản ngân hàng</span>
       </div>

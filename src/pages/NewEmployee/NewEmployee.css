@@ -1,0 +1,47 @@
+.newEmployee {
+  width: 100%;
+}
+
+.newEmployeeWrapper {
+  padding: 20px 200px;
+  height: 93vh;
+  overflow-y: auto;
+}
+
+.newEmployeeWrapper .subNote {
+  font-size: 14px;
+  color: #797979;
+  float: right;
+}
+
+.contentWrapper {
+  width: 100%;
+}
+
+.newEmployeeWrapper .newEmployeeInput {
+  color: #797979;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+}
+
+.newEmployeeWrapper .ant-form-item-explain-error {
+  font-size: 14px;
+  float: left;
+}
+
+.newEmployeeWrapper .ant-radio-wrapper span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.newEmployeeWrapper .ant-select-selector {
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  font-size: 18px !important;
+}
+
+.newEmployeeWrapper #basic_birthday::placeholder {
+  font-size: 18px !important;
+}

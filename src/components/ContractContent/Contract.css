@@ -1,0 +1,45 @@
+.contactContentWrapper {
+  width: 100%;
+  height: 93vh;
+  overflow-y: auto;
+  padding-left: 100px;
+}
+
+.contactContentWrapper > h1 {
+  margin: 40px 0;
+}
+
+.contactContentWrapper .contractContent {
+  padding-left: 80px;
+}
+
+.contactContentWrapper .contractContent .content {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.contactContentWrapper .contractContent .content > p {
+  margin: 10px 0;
+}
+
+.contactContentWrapper .contractContent > h1 {
+  margin: 20px 0;
+}
+
+.contactContentWrapper .contractContent .title {
+  color: #4979d7;
+}
+
+.contactContentWrapper .contractContent .label {
+  font-weight: bold;
+  color: black;
+  width: 12rem;
+  display: inline-block;
+}
+
+.contactContentWrapper .contractContent .subLabel {
+  color: black;
+  width: 10rem;
+  display: inline-block;
+  font-size: 18px;
+}

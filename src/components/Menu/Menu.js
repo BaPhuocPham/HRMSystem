@@ -167,6 +167,7 @@ export const MenuBar = () => {
     <Menu
       onClick={onClick}
       style={{
+        display: location.pathname === "/login" ? "none" : "block",
         width: "20%",
         height: "100vh",
         overflow: "auto",

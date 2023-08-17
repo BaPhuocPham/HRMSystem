@@ -1,0 +1,72 @@
+.login {
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.login .loginBackgr {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.login .loginBackgr img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.login .loginWrapper {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .loginWrapper .loginContainer > h1 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 56px;
+  color: black;
+  text-align: left;
+}
+
+.login .loginWrapper .loginContainer > p {
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.login .loginWrapper .loginContainer {
+  width: 90%;
+  /* margin: 0 auto; */
+  padding-left: 10%;
+}
+
+.login .loginWrapper .loginContainer .ant-form-item-explain-error {
+  font-size: 14px;
+  float: left;
+}
+
+.login .loginWrapper .loginContainer .subText {
+  width: 100%;
+  text-align: left;
+  color: #797979;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login .loginWrapper .loginContainer .subText:hover {
+  color: #30a281;
+  text-decoration: underline;
+}
+
+.inputArea:focus {
+  outline: solid 1px #30a281 !important;
+}

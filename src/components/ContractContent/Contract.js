@@ -4,7 +4,17 @@ import "./Contract.css";
 export const Contract = () => {
   return (
     <div className="contactContentWrapper">
-      <h1 style={{ color: "black" }}>Thông tin hợp đồng</h1>
+      <h1
+        style={{
+          color: "black",
+          textAlign: "center",
+          width: "100%",
+          fontWeight: "bold",
+          textTransform: "uppercase",
+        }}
+      >
+        Thông tin hợp đồng
+      </h1>
       <div className="contractContent">
         <h1 className="title">Thông tin người lao động</h1>
         <div className="content">

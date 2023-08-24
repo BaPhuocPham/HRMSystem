@@ -23,7 +23,7 @@ const columns = [
     width: 20,
   },
   {
-    title: <span style={{ color: "#9f9f9f" }}>ID</span>,
+    title: <span>ID</span>,
     dataIndex: "id",
     key: "id",
     render: (text) => (
@@ -33,7 +33,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         {" "}
         <UserOutlined />
         &emsp; <span>Tên phòng ban</span>
@@ -68,7 +68,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         {" "}
         <UserOutlined />
         &emsp;<span>Quản lý</span>
@@ -108,7 +108,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <NumberOutlined />
         &emsp; <span>Số nhân viên</span>
       </div>
@@ -129,12 +129,9 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <AlignLeftOutlined />
-        &emsp;{" "}
-        <span style={{ minWidth: "max-content", fontWeight: 500 }}>
-          Email quản lý
-        </span>
+        &emsp; <span style={{ minWidth: "max-content" }}>Email quản lý</span>
       </div>
     ),
     dataIndex: "email",
@@ -153,7 +150,7 @@ const columns = [
   },
   {
     title: (
-      <div style={{ color: "#9f9f9f" }}>
+      <div>
         <PhoneOutlined /> &emsp;{" "}
         <span style={{ minWidth: "max-content" }}>Số điện thoại</span>
       </div>

@@ -9,6 +9,7 @@ import { MyContract } from "./pages/MyContract/MyContract";
 import { EmployeeContract } from "./pages/EmployeeContract/EmployeeContract";
 import { NewEmployee } from "./pages/NewEmployee/NewEmployee";
 import { Login } from "./pages/Login/Login";
+import { Homepage } from "./pages/Homepage/Homepage";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
               <Route path="/my_contract" element={<MyContract />} />
               <Route path="/candidates" element={<Dashboard />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/homepage" element={<Homepage />} />
             </Routes>
           </div>
         </div>

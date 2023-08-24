@@ -19,7 +19,7 @@
 }
 
 .contactContentWrapper .contractContent .content > p {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .contactContentWrapper .contractContent > h1 {
@@ -33,7 +33,7 @@
 .contactContentWrapper .contractContent .label {
   font-weight: bold;
   color: black;
-  width: 12rem;
+  width: 13rem;
   display: inline-block;
 }
 

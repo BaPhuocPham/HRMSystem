@@ -53,7 +53,7 @@ const items = [
         Nguyen Van Quan Ly
       </span>
     </div>,
-    "/"
+    "avatar"
   ),
   getItem(
     <p>
@@ -157,6 +157,9 @@ export const MenuBar = () => {
   //   //   navigate(localStorage.getItem("locationMenu"));
   //   // }
   // }, []);
+  useEffect(() => {
+    setSelectMenu(location.pathname);
+  }, [location.pathname]);
   const onClick = (e) => {
     console.log("click ", e.key);
     localStorage.setItem("locationMenu", e.key);
@@ -167,7 +170,10 @@ export const MenuBar = () => {
     <Menu
       onClick={onClick}
       style={{
-        display: location.pathname === "/login" ? "none" : "block",
+        display:
+          location.pathname === "/login" || location.pathname === "/homepage"
+            ? "none"
+            : "block",
         width: "20%",
         height: "100vh",
         overflow: "auto",

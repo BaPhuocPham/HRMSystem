@@ -178,7 +178,7 @@ export const MenuBar = () => {
         height: "100vh",
         overflow: "auto",
         textAlign: "left",
-        fontWeight: "500",
+        fontWeight: "300",
         fontSize: "16px",
         minWidth: 256,
         // color: "#797979",

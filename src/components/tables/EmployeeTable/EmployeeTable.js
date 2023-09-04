@@ -121,7 +121,6 @@ const columns = [
       <div>
         <div
           style={{
-            textDecoration: "underline",
             display: "inline-block",
             backgroundColor: record.color,
             width: "10px",
@@ -132,7 +131,6 @@ const columns = [
 
         <span
           style={{
-            textDecoration: "underline",
             minWidth: "max-content",
             color: "#797979",
           }}

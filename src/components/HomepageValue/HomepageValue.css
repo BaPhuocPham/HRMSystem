@@ -1,0 +1,71 @@
+.value-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+}
+
+.value-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.value-container > div {
+  flex: 1;
+}
+
+.value-container .value-right {
+  gap: 0.5rem;
+}
+
+.value-container .icon-container {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  color: var(--blue);
+  font-size: 1rem;
+  height: 50%;
+  border-radius: 5px;
+  background-color: #eeeeff;
+}
+
+.value-container .dropdownIcon-container {
+  display: flex;
+  /* max-height: max-content; */
+  align-items: center;
+  padding: 10px;
+  color: var(--blue) !important;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #eeeeff;
+}
+
+.value-right .accordion-header {
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .value-container {
+    flex-direction: column;
+  }
+
+  .value-container .image-container {
+    width: 100%;
+    height: 25rem;
+  }
+
+  @media (max-width: 768px) {
+    .value-right .accordion-header {
+      font-size: 0.7rem;
+    }
+
+    .ant-collapse-header {
+      padding: 0px 16px !important;
+    }
+  }
+}

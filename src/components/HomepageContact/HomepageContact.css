@@ -1,0 +1,119 @@
+.contact-container {
+  justify-content: space-between !important;
+}
+
+.contact-container > div {
+  flex: 1;
+}
+
+.contact-container .contact-right {
+  justify-content: end;
+}
+
+.contact-container .contact-left {
+  gap: 0.5rem;
+}
+
+.contact-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+}
+
+.contact-container .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-container .contactModes {
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-container .contactModes .row {
+  gap: 1.5rem;
+}
+
+.contact-container .mode {
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: all 300ms ease-in;
+}
+
+.contact-container .mode:hover {
+  scale: 1.1;
+  z-index: 1;
+  box-shadow: var(--shadow);
+}
+
+.contact-container .mode .icon {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eeeeff;
+  color: var(--blue);
+}
+
+.contact-container .mode .button {
+  width: 100%;
+  background: var(--lightBlue);
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.contact-container .mode .button:hover {
+  background-color: var(--blue);
+  color: white;
+  scale: 0.8;
+  z-index: 2;
+}
+
+.contact-container .mode :nth-child(1) {
+  gap: 1.6rem;
+}
+
+.contact-container .mode .detail .primaryText {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-container .contact-right {
+    /* width: 100%; */
+    justify-content: center !important;
+  }
+
+  .contact-container .contactModes {
+    width: 100%;
+  }
+
+  .contact-container .contactModes .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-container .mode {
+    width: 100%;
+  }
+
+  @media (max-width: 550px) {
+    .contact-container .contact-right {
+      width: 100%;
+    }
+
+    .contact-container .image-container {
+      width: 100%;
+      height: 25rem;
+    }
+  }
+}

@@ -56,7 +56,6 @@ const columns = [
         <span
           style={{
             color: "#797979",
-            textDecoration: "underline",
             minWidth: "max-content",
           }}
         >

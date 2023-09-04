@@ -377,7 +377,6 @@ export const NewEmployee = () => {
               label=<span
                 style={{
                   fontSize: "18px",
-                  fontWeight: "bold",
                   marginTop: "10px",
                 }}
               >
@@ -394,8 +393,8 @@ export const NewEmployee = () => {
                 placeholder="Chọn ngày sinh"
                 style={{
                   width: "100%",
-                  height: "60px",
-                  fonSize: "18px",
+                  height: "45px",
+                  fonSize: "18px!important",
                   color: "#797979",
                 }}
                 format={"DD-MM-YYYY"}

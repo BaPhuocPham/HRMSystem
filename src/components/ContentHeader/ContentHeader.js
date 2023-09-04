@@ -9,7 +9,7 @@ export const ContentHeader = ({ title }) => {
     <div className="contentHeader">
       <p className="title">{title}</p>
       <div className="logoutBtn">
-        <LogoutOutlined onClick={() => navigate("/login")} />
+        <LogoutOutlined onClick={() => navigate("/homepage")} />
       </div>
     </div>
   );

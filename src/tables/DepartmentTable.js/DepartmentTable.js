@@ -7,7 +7,7 @@ import {
   EllipsisOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { departmentData } from "../../../shared/departmentData";
+import { departmentData } from "../../shared/departmentData";
 const columns = [
   {
     title: "",

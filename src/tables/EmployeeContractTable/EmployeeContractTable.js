@@ -1,6 +1,6 @@
 import { Table, Tooltip } from "antd";
 import React from "react";
-import { employeeContractData } from "../../../shared/employeeContractData";
+import { employeeContractData } from "../../shared/employeeContractData";
 import {
   AlignLeftOutlined,
   CalendarOutlined,

@@ -1,8 +1,8 @@
 import React from "react";
 import { ContentHeader } from "../../components/ContentHeader/ContentHeader";
 import "./Department.css";
-import { DepartmentTable } from "../../components/tables/DepartmentTable.js/DepartmentTable";
 import { PlusOutlined } from "@ant-design/icons";
+import { DepartmentTable } from "../../tables/DepartmentTable.js/DepartmentTable";
 
 export const Department = () => {
   return (

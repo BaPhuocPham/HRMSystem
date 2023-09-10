@@ -8,7 +8,7 @@ import {
   PhoneOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { employeeData } from "../../../shared/employeeData";
+import { employeeData } from "../../shared/employeeData";
 const columns = [
   {
     title: "",

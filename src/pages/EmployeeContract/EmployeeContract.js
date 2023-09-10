@@ -1,8 +1,8 @@
 import React from "react";
 import { ContentHeader } from "../../components/ContentHeader/ContentHeader";
-import { EmployeeContractTable } from "../../components/tables/EmployeeContractTable/EmployeeContractTable";
 import "./EmployeeContract.css";
 import { InputBasic } from "../../components/InputBasic/InputBasic";
+import { EmployeeContractTable } from "../../tables/EmployeeContractTable/EmployeeContractTable";
 
 export const EmployeeContract = () => {
   return (
